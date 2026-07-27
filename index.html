@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>灵笼：INCARNATION — 国产科幻动画巅峰之作 | 哔哩哔哩独家</title>
+<meta name="description" content="灵笼：INCARNATION — 艺画开天出品，哔哩哔哩独家热播。末日废土科幻史诗，第二季好评如潮，大电影即将来袭！">
+<style>
+/* ===== Reset & Base ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #c41e3a; border-radius: 3px; }
+
+/* ===== Navigation ===== */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  background: rgba(10,10,15,0.92); backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(196,30,58,0.3);
+  transition: all 0.3s;
+}
+nav .nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between; height: 64px;
+}
+nav .logo {
+  font-size: 1.6rem; font-weight: 900; letter-spacing: 4px;
+  background: linear-gradient(135deg, #e63946, #ff6b35);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+nav .nav-links { display: flex; gap: 28px; list-style: none; }
+nav .nav-links a {
+  color: #999; text-decoration: none; font-size: 0.9rem;
+  letter-spacing: 1px; transition: color 0.3s; position: relative;
+}
+nav .nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+  background: #e63946; transition: width 0.3s;
+}
+nav .nav-links a:hover { color: #fff; }
+nav .nav-links a:hover::after { width: 100%; }
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative; height: 100vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10,10,15,0.3) 0%, rgba(10,10,15,0.6) 50%, rgba(10,10,15,0.9) 100%),
+    url('images/8385dff836284982a440bd5524769df2.jpeg~tplv-a9rns2rl98-ppe_i_pre_wm_15_marc_b_3_RG91YmFvMDIxTk5BMDAxMjYwNzI1Mk5O.png') center/97% auto no-repeat;
+  background-color: #0a0a0f;
+  filter: saturate(1.2);
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+@keyframes heroZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.03); }
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(196,30,58,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 20%, rgba(0,160,255,0.06) 0%, transparent 50%);
+}
+.hero-particles { position: absolute; inset: 0; overflow: hidden; z-index: 1; }
+.hero-particles .particle {
+  position: absolute; width: 2px; height: 2px; background: rgba(255,255,255,0.3);
+  border-radius: 50%; animation: floatUp linear infinite;
+}
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+}
+.hero-content { position: relative; z-index: 2; padding: 0 24px; }
+.hero-label {
+  display: inline-block; padding: 6px 20px; border: 1px solid rgba(196,30,58,0.5);
+  border-radius: 50px; font-size: 0.85rem; letter-spacing: 3px; color: #e63946;
+  margin-bottom: 24px; animation: fadeInDown 1s ease;
+  backdrop-filter: blur(10px); background: rgba(10,10,15,0.4);
+}
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 7rem); font-weight: 900; line-height: 1.1;
+  letter-spacing: 8px; margin-bottom: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; text-shadow: none;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+.hero h1 .accent {
+  background: linear-gradient(135deg, #e63946, #ff6b35);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero .subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.4rem); color: #aaa; letter-spacing: 2px;
+  margin-bottom: 32px; animation: fadeInUp 1s ease 0.4s both;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+}
+.hero .stats-row {
+  display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 40px; animation: fadeInUp 1s ease 0.6s both;
+}
+.hero .stat { text-align: center; }
+.hero .stat .num {
+  font-size: 2rem; font-weight: 900;
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero .stat .label { font-size: 0.8rem; color: #999; letter-spacing: 1px; margin-top: 4px; }
+.hero .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease 0.8s both; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 14px 36px;
+  border-radius: 50px; font-size: 1rem; font-weight: 600; letter-spacing: 1px;
+  text-decoration: none; transition: all 0.3s; cursor: pointer; border: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #e63946, #c41e3a);
+  color: #fff; box-shadow: 0 8px 32px rgba(196,30,58,0.4);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(196,30,58,0.6); }
+.btn-outline {
+  border: 2px solid rgba(255,255,255,0.3); color: #fff; background: transparent;
+  backdrop-filter: blur(10px);
+}
+.btn-outline:hover { border-color: #fff; transform: translateY(-3px); background: rgba(255,255,255,0.05); }
+.btn-bilibili {
+  background: #fb7299; color: #fff; box-shadow: 0 8px 32px rgba(251,114,153,0.3);
+}
+.btn-bilibili:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(251,114,153,0.5); }
+.scroll-indicator {
+  position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+  animation: bounce 2s infinite; z-index: 2;
+}
+.scroll-indicator span { display: block; width: 30px; height: 30px; border-right: 2px solid #e63946; border-bottom: 2px solid #e63946; transform: rotate(45deg); }
+@keyframes bounce {
+  0%,100% { bottom: 40px; } 50% { bottom: 20px; }
+}
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== Section Common ===== */
+section { padding: 100px 24px; position: relative; }
+.section-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+.section-label {
+  display: inline-block; font-size: 0.8rem; letter-spacing: 4px; color: #e63946;
+  margin-bottom: 12px; text-transform: uppercase;
+}
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900; letter-spacing: 2px;
+  margin-bottom: 16px; color: #fff;
+}
+.section-desc { font-size: 1.05rem; color: #888; max-width: 700px; margin-bottom: 48px; line-height: 1.8; }
+
+/* ===== World Section ===== */
+#world { background: #0d0d16; position: relative; }
+#world::before {
+  content: ''; position: absolute; inset: 0; opacity: 0.05;
+  background: url('images/still_23.jpg') center/cover no-repeat fixed;
+}
+.world-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.world-card {
+  background: rgba(10,10,15,0.85); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px; padding: 0; transition: all 0.4s; position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.world-card .card-img {
+  height: 220px; background-size: cover; background-position: center;
+  transition: transform 0.6s; position: relative;
+}
+.world-card .card-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10,10,15,0.7) 100%);
+}
+.world-card:hover .card-img { transform: scale(1.08); }
+.world-card .card-img.lighthouse { background-image: url('images/wallpapers/ac_1190461.jpg'); background-position: center 30%; }
+.world-card .card-img.hunters { background-image: url('images/wallpapers/ac_1190465.jpg'); background-position: center 20%; }
+.world-card .card-img.monsters { background-image: url('images/wallpapers/ac_1190434.jpg'); background-position: center 30%; }
+.world-card .card-img.surface { background-image: url('images/still_26.jpg'); background-position: center 40%; }
+.world-card .card-body { padding: 24px; position: relative; }
+.world-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+  background: linear-gradient(180deg, #e63946, transparent); z-index: 1;
+}
+.world-card:hover { border-color: rgba(196,30,58,0.3); transform: translateY(-4px); }
+.world-card .icon { font-size: 1.5rem; margin-bottom: 8px; }
+.world-card h3 { font-size: 1.2rem; color: #fff; margin-bottom: 8px; letter-spacing: 1px; }
+.world-card p { color: #888; font-size: 0.9rem; line-height: 1.7; }
+
+/* ===== Characters Section ===== */
+#characters { background: #0a0a0f; }
+.char-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.char-card {
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px; overflow: hidden; transition: all 0.4s;
+}
+.char-card:hover { transform: translateY(-6px); border-color: rgba(196,30,58,0.4); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.char-card .char-img {
+  height: 260px; background-size: cover; background-position: center top;
+  transition: transform 0.6s; position: relative;
+}
+.char-card:hover .char-img { transform: scale(1.05); }
+.char-card .char-img::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 80px;
+  background: linear-gradient(transparent, rgba(10,10,15,0.95));
+}
+.char-img.mark { background-image: url('images/162711-17490256319da8.jpg'); }
+.char-img.ranbing { background-image: url('images/characters/nipic_01.jpg'); }
+.char-img.baiyuekui { background-image: url('images/characters/ranbing_02.jpg'); }
+.char-img.charles { background-image: url('images/6b730ea9aca391ed8d.png'); }
+.char-img.suiying { background-image: url('images/65a4cf0939f2590c3f.jpg'); }
+.char-img.village { background-image: url('images/屏幕截图 2026-06-15 015127.png'); }
+.char-card .char-info { padding: 20px; }
+.char-card .char-info h3 { font-size: 1.2rem; color: #fff; margin-bottom: 4px; }
+.char-card .char-info .role-tag {
+  display: inline-block; padding: 2px 10px; border-radius: 50px;
+  font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 8px;
+}
+.tag-commander { background: rgba(230,57,70,0.2); color: #e63946; }
+.tag-sniper { background: rgba(0,160,255,0.2); color: #00a0ff; }
+.tag-ground { background: rgba(0,200,150,0.2); color: #00c896; }
+.tag-antagonist { background: rgba(255,170,0,0.2); color: #ffaa00; }
+.tag-hunter { background: rgba(160,100,255,0.2); color: #a064ff; }
+.char-card .char-info p { color: #777; font-size: 0.85rem; line-height: 1.6; }
+
+/* ===== Seasons Section ===== */
+#seasons { background: #0d0d16; position: relative; }
+.season-tabs { display: flex; gap: 16px; margin-bottom: 40px; }
+.season-tab {
+  padding: 12px 32px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.1);
+  background: transparent; color: #888; cursor: pointer; font-size: 1rem;
+  letter-spacing: 1px; transition: all 0.3s;
+}
+.season-tab.active, .season-tab:hover {
+  background: rgba(196,30,58,0.15); border-color: #e63946; color: #fff;
+}
+.season-content { display: none; }
+.season-content.active { display: block; }
+.season-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+@media (max-width: 768px) { .season-grid { grid-template-columns: 1fr; } }
+.season-poster {
+  border-radius: 16px; overflow: hidden; aspect-ratio: 3/4;
+  background-size: cover; background-position: center;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.season-poster.s1 { background-image: url('images/d35d66600ff74388944916c0bb5a1ca4.jpeg~tplv-a9rns2rl98-ppe_i_pre_wm_15_marc_b_3_RG91YmFvMDIxTk5BMDAxMjYwNzI1Mk5O.png'); }
+.season-poster.s2 { background-image: url('images/695b3d464bfa4978b326e1cfbe2fa341.jpeg~tplv-a9rns2rl98-ppe_i_pre_wm_15_marc_b_3_RG91YmFvMDIxTk5BMDAxMjYwNzI1Mk5O.png'); }
+.season-info h2 { font-size: 2rem; color: #fff; margin-bottom: 12px; }
+.season-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+.season-meta-item { text-align: center; }
+.season-meta-item .val { font-size: 1.4rem; font-weight: 700; color: #e63946; }
+.season-meta-item .lbl { font-size: 0.75rem; color: #666; }
+.season-synopsis { color: #999; line-height: 1.9; font-size: 0.95rem; }
+.season-highlights {
+  background: rgba(10,10,15,0.8); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px; padding: 28px; backdrop-filter: blur(10px);
+}
+.season-highlights h4 { color: #fff; margin-bottom: 16px; font-size: 1.1rem; letter-spacing: 1px; }
+.season-highlights ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.season-highlights li {
+  padding-left: 20px; position: relative; color: #aaa; font-size: 0.9rem; line-height: 1.6;
+}
+.season-highlights li::before {
+  content: '▸'; position: absolute; left: 0; color: #e63946;
+}
+
+/* ===== Awards Section ===== */
+#awards {
+  background: linear-gradient(180deg, #0a0a0f 0%, #0d1117 100%);
+  position: relative;
+}
+#awards::before {
+  content: ''; position: absolute; inset: 0; opacity: 0.04;
+  background: url('images/poster_5.jpg') center/cover no-repeat fixed;
+}
+.timeline { position: relative; padding-left: 40px; }
+.timeline::before {
+  content: ''; position: absolute; left: 12px; top: 0; width: 2px; height: 100%;
+  background: linear-gradient(180deg, #e63946, #ff6b35, rgba(196,30,58,0.1));
+}
+.timeline-item { position: relative; margin-bottom: 32px; background: rgba(10,10,15,0.7); padding: 20px 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); backdrop-filter: blur(5px); }
+.timeline-item::before {
+  content: ''; position: absolute; left: -34px; top: 24px; width: 12px; height: 12px;
+  border-radius: 50%; background: #e63946; border: 2px solid #0a0a0f; box-shadow: 0 0 12px rgba(196,30,58,0.6);
+}
+.timeline-item .year {
+  font-size: 0.8rem; color: #e63946; letter-spacing: 2px; margin-bottom: 4px;
+}
+.timeline-item h4 { color: #fff; font-size: 1.05rem; margin-bottom: 4px; }
+.timeline-item p { color: #888; font-size: 0.85rem; }
+.award-badge {
+  display: inline-block; padding: 4px 12px; border-radius: 50px;
+  font-size: 0.7rem; letter-spacing: 1px; margin-left: 8px;
+}
+.badge-international { background: rgba(0,160,255,0.15); color: #00a0ff; }
+.badge-domestic { background: rgba(255,170,0,0.15); color: #ffaa00; }
+.badge-major { background: rgba(230,57,70,0.15); color: #e63946; }
+
+/* ===== Watch Section ===== */
+#watch {
+  background: #0a0a0f; text-align: center; position: relative;
+}
+#watch::before {
+  content: ''; position: absolute; inset: 0; opacity: 0.05;
+  background: url('images/still_22.jpg') center/cover no-repeat;
+}
+.platform-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 40px; }
+.platform-card {
+  background: rgba(10,10,15,0.85); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px; padding: 32px; transition: all 0.4s; text-decoration: none; color: inherit;
+  backdrop-filter: blur(10px);
+}
+.platform-card:hover { border-color: rgba(251,114,153,0.4); transform: translateY(-4px); }
+.platform-card .platform-icon { font-size: 3rem; margin-bottom: 12px; }
+.platform-card h3 { color: #fff; margin-bottom: 8px; }
+.platform-card p { color: #888; font-size: 0.85rem; }
+
+/* ===== Gallery Section (Bonus) ===== */
+#gallery { background: #0d0d16; }
+.gallery-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;
+}
+.gallery-item {
+  border-radius: 12px; overflow: hidden; aspect-ratio: 16/10;
+  background-size: cover; background-position: center;
+  transition: all 0.4s; cursor: pointer; border: 1px solid rgba(255,255,255,0.05);
+}
+.gallery-item:hover { transform: scale(1.03); border-color: rgba(196,30,58,0.4); box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+
+/* ===== Footer ===== */
+footer {
+  background: #06060a; border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 40px 24px; text-align: center;
+}
+footer .footer-text { color: #555; font-size: 0.8rem; letter-spacing: 1px; line-height: 2; }
+footer .footer-text a { color: #888; text-decoration: none; }
+footer .footer-text a:hover { color: #e63946; }
+
+/* ===== Comments Section ===== */
+#comments { background: #0d0d16; }
+.comments-container { max-width: 700px; margin: 0 auto; }
+
+/* --- Comment Form --- */
+.comment-form {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px; padding: 28px; margin-bottom: 32px;
+  backdrop-filter: blur(10px);
+}
+.comment-form .form-row { margin-bottom: 16px; }
+.comment-form .form-row:last-of-type { margin-bottom: 20px; }
+.comment-form label {
+  display: block; color: #aaa; font-size: 0.85rem; margin-bottom: 6px; letter-spacing: 1px;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%; padding: 12px 16px;
+  background: rgba(10,10,15,0.7); border: 1px solid rgba(196,30,58,0.25);
+  border-radius: 10px; color: #e0e0e0; font-size: 0.95rem;
+  font-family: inherit; transition: all 0.3s; outline: none; resize: vertical;
+}
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border-color: #e63946; box-shadow: 0 0 16px rgba(196,30,58,0.15);
+}
+.comment-form input { max-width: 320px; }
+.comment-form textarea { min-height: 100px; }
+.comment-form .form-hint { font-size: 0.75rem; color: #666; margin-top: 4px; text-align: right; }
+.comment-form .btn-submit {
+  padding: 12px 36px; background: linear-gradient(135deg, #e63946, #c41e3a);
+  color: #fff; border: none; border-radius: 50px; font-size: 0.95rem; font-weight: 600;
+  letter-spacing: 1px; cursor: pointer; transition: all 0.3s;
+  box-shadow: 0 6px 24px rgba(196,30,58,0.3);
+}
+.comment-form .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(196,30,58,0.5); }
+.comment-form .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
+
+/* --- Comment List --- */
+.comment-list {
+  display: flex; flex-direction: column; gap: 12px;
+  max-height: 500px; overflow-y: auto; padding-right: 8px;
+}
+.comment-list::-webkit-scrollbar { width: 4px; }
+.comment-list::-webkit-scrollbar-track { background: transparent; }
+.comment-list::-webkit-scrollbar-thumb { background: rgba(196,30,58,0.4); border-radius: 2px; }
+.comment-item {
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);
+  border-left: 3px solid #e63946; border-radius: 0 12px 12px 0; padding: 16px 20px;
+  backdrop-filter: blur(8px); animation: commentFadeIn 0.35s ease;
+}
+.comment-item.reply {
+  margin-left: 36px; border-left-color: rgba(196,30,58,0.4); opacity: 0.92;
+}
+.comment-item .comment-meta {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+}
+.comment-item .comment-nickname { color: #e63946; font-weight: 600; font-size: 0.9rem; }
+.comment-item .comment-time { color: #555; font-size: 0.75rem; }
+.comment-item .comment-reply-tag { color: #ff6b35; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; }
+.comment-item .comment-content { color: #bbb; font-size: 0.9rem; line-height: 1.7; word-break: break-word; }
+
+.comment-empty {
+  text-align: center; color: #555; padding: 40px 20px; font-size: 0.95rem; letter-spacing: 1px;
+}
+
+.btn-reply {
+  display: inline-block; margin-top: 10px; padding: 4px 14px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50px; color: #999; font-size: 0.75rem; cursor: pointer;
+  transition: all 0.25s; letter-spacing: 1px;
+}
+.btn-reply:hover { border-color: #e63946; color: #e63946; background: rgba(196,30,58,0.08); }
+
+.btn-toggle {
+  display: inline-block; margin-top: 8px; padding: 4px 14px;
+  background: transparent; border: none; color: #ff6b35; font-size: 0.78rem;
+  cursor: pointer; letter-spacing: 1px; transition: color 0.2s;
+}
+.btn-toggle:hover { color: #ffaa00; }
+
+.comment-children { margin-top: 4px; }
+
+.comment-error {
+  background: rgba(196,30,58,0.12); border: 1px solid rgba(196,30,58,0.3);
+  border-radius: 10px; padding: 12px 20px; color: #e63946; font-size: 0.85rem;
+  text-align: center; margin-bottom: 16px; display: none;
+}
+
+@keyframes commentFadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== Lightbox ===== */
+.lightbox {
+  display: none; position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,0.92); backdrop-filter: blur(10px);
+  cursor: pointer; animation: lbFadeIn 0.3s ease;
+}
+.lightbox.active { display: flex; align-items: center; justify-content: center; }
+@keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
+.lightbox img {
+  max-width: 100vw; max-height: 100vh; object-fit: contain;
+  border-radius: 4px; box-shadow: 0 20px 80px rgba(0,0,0,0.6);
+  animation: lbZoomIn 0.3s ease;
+}
+@keyframes lbZoomIn { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.lightbox-close {
+  position: absolute; top: 24px; right: 32px; font-size: 2.5rem;
+  color: rgba(255,255,255,0.7); cursor: pointer; z-index: 1;
+  transition: color 0.2s; line-height: 1;
+}
+.lightbox-close:hover { color: #e63946; }
+.lightbox-hint {
+  position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+  color: rgba(255,255,255,0.4); font-size: 0.8rem; letter-spacing: 1px;
+}
+
+/* ===== Clickable images ===== */
+.world-card .card-img, .char-card .char-img, .gallery-item { cursor: pointer; }
+
+/* ===== Animations on scroll ===== */
+.fade-in {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav .nav-links { display: none; }
+  .hero .stats-row { gap: 20px; }
+  .hero .stat .num { font-size: 1.4rem; }
+  .season-grid { grid-template-columns: 1fr; }
+  .char-img { height: 200px; }
+  .comment-form input { max-width: 100%; }
+  .comment-item.reply { margin-left: 12px !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">灵笼</a>
+    <ul class="nav-links">
+      <li><a href="#world">世界观</a></li>
+      <li><a href="#characters">角色</a></li>
+      <li><a href="#seasons">剧集</a></li>
+      <li><a href="#awards">荣誉</a></li>
+      <li><a href="#gallery">剧照</a></li>
+      <li><a href="#comments">留言</a></li>
+      <li><a href="#watch">追番</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== Hero Section ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-label">YHKT × BILIBILI 联合出品</div>
+    <h1>灵笼<span class="accent">：</span><br><span class="accent">INCARNATION</span></h1>
+    <p class="subtitle">末日废土 · 科幻史诗 · 国产动画巅峰之作</p>
+    <div class="stats-row">
+      <div class="stat"><div class="num">11.5亿+</div><div class="label">总播放量</div></div>
+      <div class="stat"><div class="num">1155万+</div><div class="label">追番人数</div></div>
+      <div class="stat"><div class="num">9.8</div><div class="label">B站评分</div></div>
+      <div class="stat"><div class="num">8.9</div><div class="label">豆瓣评分</div></div>
+    </div>
+    <div class="cta-btns">
+      <a href="https://www.bilibili.com/bangumi/media/md23432" target="_blank" class="btn btn-bilibili">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v.914c-.036 1.511-.556 2.765-1.56 3.76-1.004.996-2.262 1.52-3.773 1.574h-.854v-1.716h.854c.807-.036 1.474-.32 2.002-.852.528-.531.799-1.168.813-1.912v-.738c-.014-.744-.285-1.381-.813-1.912-.528-.532-1.195-.816-2.002-.852h-.854V4.653ZM7.56 19.347h-.853c-1.51-.054-2.77-.578-3.774-1.574-1.004-.995-1.524-2.249-1.56-3.76v-.914c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.263-1.52 3.774-1.574h.853v1.716h-.853c-.807.036-1.474.32-2.002.852-.528.531-.8 1.168-.813 1.912v.738c.013.744.285 1.381.813 1.912.528.532 1.195.816 2.002.852h.853v1.716ZM12 4.653h1.716v14.694H12V4.653Z"/></svg>
+        在哔哩哔哩追番
+      </a>
+      <a href="#world" class="btn btn-outline">探索世界观</a>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span></span></div>
+</section>
+
+<!-- ===== World Section ===== -->
+<section id="world">
+  <div class="section-inner">
+    <div class="section-label fade-in">WORLDVIEW</div>
+    <h2 class="section-title fade-in">末日废土 · 玛娜生态</h2>
+    <p class="section-desc fade-in">
+      不远的未来，地球遭遇大规模地质灾难。一种名为<strong>「玛娜生态」</strong>的全新生态系统覆盖地表，凶残的怪物肆虐大地。幸存的人类迁居至浮空城市<strong>「灯塔」</strong>，在冰冷的生存法则下苟延残喘。
+    </p>
+    <div class="world-cards">
+      <div class="world-card fade-in">
+        <div class="card-img lighthouse"></div>
+        <div class="card-body">
+          <div class="icon">🏗️</div>
+          <h3>灯塔</h3>
+          <p>人类最后的空中堡垒，悬浮于废土之上。实行三大生存法则：基因分级、禁止自由恋爱、老人"远行"。分上民与尘民两大阶层，社会秩序由光影教会维持。</p>
+        </div>
+      </div>
+      <div class="world-card fade-in">
+        <div class="card-img hunters"></div>
+        <div class="card-body">
+          <div class="icon">⚔️</div>
+          <h3>猎荒者</h3>
+          <p>由灯塔上民精英组成的武装部队，配备外骨骼动力装甲「重力体」。深入危机四伏的地表废墟，为灯塔搜集生存必需的物资与能源。</p>
+        </div>
+      </div>
+      <div class="world-card fade-in">
+        <div class="card-img monsters"></div>
+        <div class="card-body">
+          <div class="icon">🦴</div>
+          <h3>噬极兽</h3>
+          <p>玛娜生态衍生的恐怖生命体，种类繁多——脊蛊、地吼、花萼兽……能释放致命腥荭素，吞噬人类生命源质。任何猎荒行动都可能遭遇它们的袭击。</p>
+        </div>
+      </div>
+      <div class="world-card fade-in">
+        <div class="card-img surface"></div>
+        <div class="card-body">
+          <div class="icon">🌍</div>
+          <h3>地面幸存者</h3>
+          <p>灯塔并非唯一的人类据点。地表存在神秘的地面人类聚落「龙骨村」，掌握独特的生命源质修炼体系，能在玛娜生态中隐藏自身并与之共存。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Characters Section ===== -->
+<section id="characters">
+  <div class="section-inner">
+    <div class="section-label fade-in">CHARACTERS</div>
+    <h2 class="section-title fade-in">主要角色</h2>
+    <p class="section-desc fade-in">在末日废土的残酷法则下，每个人都在为自己的信念而战。</p>
+    <div class="char-grid">
+      <div class="char-card fade-in">
+        <div class="char-img mark"></div>
+        <div class="char-info">
+          <h3>马克 · Marc</h3>
+          <span class="role-tag tag-commander">猎荒者指挥官</span>
+          <p>身高192cm，前猎荒者指挥官。幼年目睹姐姐红蔻因自由恋爱被处以火刑。被4068背刺后遭脊蛊寄生，变异为半人半玛娜的存在。被白月魁带走后，在龙骨村学习控制自身力量，被认为是击败玛娜生态的关键。</p>
+        </div>
+      </div>
+      <div class="char-card fade-in">
+        <div class="char-img ranbing"></div>
+        <div class="char-info">
+          <h3>冉冰 · Ran Bing</h3>
+          <span class="role-tag tag-sniper">副官 / 首席狙击手</span>
+          <p>身高165cm，猎荒者副官兼首席狙击手，马克的青梅竹马与恋人。在马克勇闯晨曦大厅后两人确认心意。可惜被变异马克无意识吸收生命源质而死，意识残存于马克体内，是系列最令人心碎的角色。</p>
+        </div>
+      </div>
+      <div class="char-card fade-in">
+        <div class="char-img baiyuekui"></div>
+        <div class="char-info">
+          <h3>白月魁 · Bai Yuekui</h3>
+          <span class="role-tag tag-ground">龙骨村领袖</span>
+          <p>旧世界的脑科学家，身体经过强化改造。地面人类聚落龙骨村的领袖，实力深不可测，能以体术碾压变异后的马克。带领马克进行康复训练，掌握着关于玛娜生态的核心秘密。</p>
+        </div>
+      </div>
+      <div class="char-card fade-in">
+        <div class="char-img charles"></div>
+        <div class="char-info">
+          <h3>查尔斯 · Charles</h3>
+          <span class="role-tag tag-antagonist">光影会首 / 篡位城主</span>
+          <p>灯塔城主摩根之子，光影教会会首。利用4068背刺马克，后篡位成为新城主。被暴走的马克重伤失去左臂和右眼。代表灯塔冷酷法则的极致，是贯穿两季的核心反派。</p>
+        </div>
+      </div>
+      <div class="char-card fade-in">
+        <div class="char-img suiying"></div>
+        <div class="char-info">
+          <h3>4068 / 随影</h3>
+          <span class="role-tag tag-hunter">尘民 → 猎荒者指挥官</span>
+          <p>原本是无名无姓的灯塔尘民，编号4068。受查尔斯诱惑从背后刺伤马克，导致一系列悲剧。被赐名"随影"并提拔为上民，后成为新一任猎荒者指挥官，内心始终被罪恶感纠缠。</p>
+        </div>
+      </div>
+      <div class="char-card fade-in">
+        <div class="char-img village"></div>
+        <div class="char-info">
+          <h3>龙骨村众</h3>
+          <span class="role-tag tag-ground">地面势力</span>
+          <p><strong>夏豆</strong>：能用游戏手柄入侵噬极兽思维。<br>
+          <strong>碎星</strong>：感知力超群的弓箭手。<br>
+          <strong>山大</strong>：能生成浓缩生命源质的战士。<br>
+          他们是人类在玛娜生态中生存的另一种可能。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Seasons Section ===== -->
+<section id="seasons">
+  <div class="section-inner">
+    <div class="section-label fade-in">EPISODES</div>
+    <h2 class="section-title fade-in">剧集内容</h2>
+    <p class="section-desc fade-in">两季交替，史诗渐入高潮。从灯塔到大地，人类命运的齿轮开始转动。</p>
+
+    <div class="season-tabs fade-in">
+      <button class="season-tab active" onclick="switchSeason(0)">第一季 · 灯塔</button>
+      <button class="season-tab" onclick="switchSeason(1)">第二季 · 大地</button>
+    </div>
+
+    <!-- Season 1 -->
+    <div class="season-content active" id="season-0">
+      <div class="season-grid">
+        <div class="season-poster s1"></div>
+        <div class="season-info">
+          <h2>第一季：灯塔</h2>
+          <div class="season-meta">
+            <div class="season-meta-item"><div class="val">2019</div><div class="lbl">开播年份</div></div>
+            <div class="season-meta-item"><div class="val">16</div><div class="lbl">集数</div></div>
+            <div class="season-meta-item"><div class="val">25min</div><div class="lbl">单集时长</div></div>
+            <div class="season-meta-item"><div class="val">9.8</div><div class="lbl">B站评分</div></div>
+          </div>
+          <div class="season-synopsis">
+            <p>末日废土世界，人类最后的家园"灯塔"漂浮在天空。猎荒者指挥官<strong>马克</strong>率领小队一次次深入危机四伏的地表搜集生存物资。灯塔实行冷酷的生存法则——基因分级、禁止自由恋爱、老人被迫"远行"。</p>
+            <p style="margin-top:12px;">马克的青梅竹马<strong>冉冰</strong>逐渐意识到对他的爱情。当冉冰被安排参加繁育任务时，马克勇闯晨曦大厅将她救出。然而城主摩根突发重病，马克率队前往生态密集区取药，经历血战后拿回药物，但付出惨痛代价——尘民<strong>4068</strong>受光影会首查尔斯的诱惑，从背后刺伤马克……</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Season 2 -->
+    <div class="season-content" id="season-1">
+      <div class="season-grid">
+        <div class="season-poster s2"></div>
+        <div class="season-info">
+          <h2>第二季：大地</h2>
+          <div class="season-meta">
+            <div class="season-meta-item"><div class="val">2025</div><div class="lbl">开播年份</div></div>
+            <div class="season-meta-item"><div class="val">12</div><div class="lbl">集数</div></div>
+            <div class="season-meta-item"><div class="val">25min</div><div class="lbl">单集时长</div></div>
+            <div class="season-meta-item"><div class="val">9.8</div><div class="lbl">B站评分</div></div>
+          </div>
+          <div class="season-synopsis">
+            <p>马克被白月魁带到地面的<strong>龙骨村</strong>进行康复训练——通过体术、冥想、电竞游戏等各种方式学习控制自己的变异身体。龙骨村有独特的"生命源质"修炼体系，村民可以开启"归元模式"来隐藏气息躲避噬极兽。</p>
+            <p style="margin-top:12px;">与此同时，灯塔上发生了重大变化：<strong>查尔斯篡位</strong>成为新城主，摩根被禁锢；4068被赐名<strong>"随影"</strong>，成为新一任猎荒者指挥官。马克则被认定为击败玛娜生态的关键——人类的命运，即将在灯塔与大地之间做出选择。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Awards Section ===== -->
+<section id="awards">
+  <div class="section-inner">
+    <div class="section-label fade-in">AWARDS</div>
+    <h2 class="section-title fade-in">荣誉时刻</h2>
+    <p class="section-desc fade-in">从国内口碑到国际认可，《灵笼》用实力证明国产科幻动画的无限可能。</p>
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="year">2025 / 03</div>
+        <h4>入选国家广电总局「网络视听节目精品创作传播工程」扶持节目<span class="award-badge badge-domestic">国家级</span></h4>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2025 / 10</div>
+        <h4>2025中国广电视听精品之夜「年度推荐作品」<span class="award-badge badge-domestic">行业大奖</span></h4>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2025 / 11</div>
+        <h4>视界之光·北京电视文艺创新推优「匠心作品」<span class="award-badge badge-domestic">品质认证</span></h4>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2026 / 03</div>
+        <h4>入围法国昂西国际动画电影节 主竞赛剧集单元<span class="award-badge badge-international">国际大奖</span></h4>
+        <p>昂西动画节被誉为"动画界的戛纳"，《灵笼》成为少数入围主竞赛的中国动画之一。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2026 / 05</div>
+        <h4>入围第31届上海电视节白玉兰奖<span class="award-badge badge-major">权威奖项</span></h4>
+        <p>提名最佳动画片 & 最佳动画剧本两项大奖。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2026 / 06</div>
+        <h4>🏆 第31届上海电视节白玉兰奖「最佳动画片」获奖<span class="award-badge badge-major">🏆 获奖</span></h4>
+        <p>《灵笼》斩获白玉兰奖最佳动画片大奖，成为中国科幻动画在国际A类电视节上的里程碑。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2026 / 06</div>
+        <h4>第六届金豪笔编剧之夜「国漫最具影响力剧本」<span class="award-badge badge-domestic">剧本大奖</span></h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery Section ===== -->
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-label fade-in">GALLERY</div>
+    <h2 class="section-title fade-in">精彩剧照</h2>
+    <p class="section-desc fade-in">从灯塔到龙骨村，每一帧都是壁纸级别的视觉盛宴。</p>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item" style="background-image: url('images/still_1.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_2.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_3.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_4.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_5.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_6.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_7.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_8.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_9.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_10.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_11.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('images/still_12.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Comments Section ===== -->
+<section id="comments">
+  <div class="section-inner">
+    <div class="section-label fade-in">COMMUNITY</div>
+    <h2 class="section-title fade-in">粉丝留言板</h2>
+    <p class="section-desc fade-in">留下你对《灵笼》的感想，与全球灵笼粉丝一起交流讨论。</p>
+
+    <div class="comments-container fade-in">
+      <!-- Error message -->
+      <div class="comment-error" id="commentError"></div>
+
+      <!-- Comment form -->
+      <div class="comment-form">
+        <div class="form-row" id="replyIndicator" style="display:none;">
+          <span style="color:#ff6b35;font-size:0.85rem;">
+            ↳ 回复 <strong id="replyNickname"></strong>
+          </span>
+          <button type="button" onclick="cancelReply()" style="background:none;border:none;color:#888;cursor:pointer;font-size:0.8rem;margin-left:8px;">✕ 取消</button>
+        </div>
+        <input type="hidden" id="replyTo" value="">
+        <div class="form-row">
+          <label for="nickname">昵称 <span style="color:#e63946;">*</span></label>
+          <input type="text" id="nickname" placeholder="请输入你的昵称" maxlength="20" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label for="commentContent">留言内容 <span style="color:#e63946;">*</span></label>
+          <textarea id="commentContent" placeholder="写下你想说的话..." maxlength="500"></textarea>
+          <div class="form-hint"><span id="charCount">0</span>/500</div>
+        </div>
+        <button class="btn-submit" id="btnSubmit" onclick="submitComment()">发表留言</button>
+      </div>
+
+      <!-- Comment list -->
+      <div class="comment-list" id="commentList">
+        <div class="comment-empty">加载中...</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Watch Section ===== -->
+<section id="watch">
+  <div class="section-inner">
+    <div class="section-label fade-in">WATCH NOW</div>
+    <h2 class="section-title fade-in">立即追番</h2>
+    <p class="section-desc fade-in" style="margin:0 auto 0;">《灵笼》全系列在哔哩哔哩独家播出，两季完整上线，等你来补番！</p>
+    <div class="platform-cards">
+      <a href="https://www.bilibili.com/bangumi/media/md23432" target="_blank" class="platform-card fade-in">
+        <div class="platform-icon">📺</div>
+        <h3>哔哩哔哩 · 独家播出</h3>
+        <p>两季全28集 · 大会员抢先看</p>
+        <span class="btn btn-bilibili" style="margin-top:16px; display:inline-block;">立即追番</span>
+      </a>
+      <div class="platform-card fade-in">
+        <div class="platform-icon">🎵</div>
+        <h3>原声带 · OST</h3>
+        <p>由知名音乐人打造<br>末日史诗配乐 · B站音乐区热播</p>
+        <span style="color:#888; font-size:0.8rem; display:block; margin-top:12px;">搜索「灵笼 OST」收听</span>
+      </div>
+      <div class="platform-card fade-in">
+        <div class="platform-icon">🎨</div>
+        <h3>官方社区</h3>
+        <p>关注「艺画开天」官方微博<br>获取最新设定图、壁纸与制作幕后</p>
+        <span style="color:#888; font-size:0.8rem; display:block; margin-top:12px;">@艺画开天 官方微博</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="footer-text">
+    <p><strong>灵笼：INCARNATION</strong> © 艺画开天 × 哔哩哔哩</p>
+    <p>本网站为粉丝宣传页面，非官方站点 · 图片素材来源网络，版权归原作者所有</p>
+    <p>数据来源：<a href="https://www.bilibili.com/bangumi/media/md23432" target="_blank">哔哩哔哩弹幕网</a> · <a href="https://baike.baidu.com/item/%E7%81%B5%E7%AC%BC/23617840" target="_blank">百度百科</a> · <a href="https://www.goldposter.com/zh/movie/14764404/" target="_blank">GoldPoster</a></p>
+    <p>Made with ❤️ for the Ling Cage community · 2026</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+// Particles
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 80; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.left = Math.random() * 100 + '%';
+  p.style.animationDuration = (Math.random() * 10 + 10) + 's';
+  p.style.animationDelay = (Math.random() * 10) + 's';
+  p.style.width = (Math.random() * 3 + 1) + 'px';
+  p.style.height = p.style.width;
+  particlesContainer.appendChild(p);
+}
+
+// Season tabs
+function switchSeason(idx) {
+  document.querySelectorAll('.season-tab').forEach((t, i) => t.classList.toggle('active', i === idx));
+  document.querySelectorAll('.season-content').forEach((c, i) => c.classList.toggle('active', i === idx));
+}
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Shrink nav on scroll
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  const targetH = window.scrollY > 100 ? '56px' : '64px';
+  nav.style.height = targetH;
+  document.querySelector('.nav-inner').style.height = targetH;
+});
+
+// Lightbox
+function getBgUrl(el) {
+  const bg = getComputedStyle(el).backgroundImage;
+  const match = bg.match(/url\(["']?([^"')]+)["']?\)/);
+  return match ? match[1] : null;
+}
+
+function openLightbox(url) {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  img.src = url;
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+// Bind clicks: world cards, character cards, gallery items
+document.querySelectorAll('.world-card .card-img, .char-card .char-img, .gallery-item').forEach(el => {
+  el.addEventListener('click', function(e) {
+    e.stopPropagation();
+    let url;
+    if (this.classList.contains('gallery-item')) {
+      url = getComputedStyle(this).backgroundImage.match(/url\(["']?([^"')]+)["']?\)/)?.[1];
+    } else {
+      url = getBgUrl(this);
+    }
+    if (url) openLightbox(url);
+  });
+});
+
+// ===== Supabase Comments =====
+(function() {
+if (typeof window.supabase === 'undefined') {
+  // CDN failed to load, comments disabled
+  var el = document.getElementById('commentList');
+  if (el) el.innerHTML = '<div class="comment-empty">评论区暂不可用，请稍后刷新重试</div>';
+  return;
+}
+
+const SUPABASE_URL = 'https://uwhtvofbmaogesvujqyg.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV3aHR2b2ZibWFvZ2VzdnVqcXlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ3MzIzMTcsImV4cCI6MjEwMDMwODMxN30.XAa_SlMT5t5imPGBStfMujMM5j3bZ7du-450pdCl3V8';
+const PAGE_ID = 'anime-promo';
+
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// Escape HTML for XSS protection
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// Relative time formatter
+function timeAgo(dateStr) {
+  const now = new Date();
+  const then = new Date(dateStr);
+  const diff = Math.floor((now - then) / 1000);
+  if (diff < 60) return '刚刚';
+  if (diff < 3600) return Math.floor(diff / 60) + ' 分钟前';
+  if (diff < 86400) return Math.floor(diff / 3600) + ' 小时前';
+  if (diff < 2592000) return Math.floor(diff / 86400) + ' 天前';
+  return then.toLocaleDateString('zh-CN');
+}
+
+// Fetch and render comments
+async function loadComments() {
+  const listEl = document.getElementById('commentList');
+  try {
+    const { data, error } = await supabase
+      .from('comments')
+      .select('*')
+      .eq('page_id', PAGE_ID)
+      .order('created_at', { ascending: false });
+
+    if (error) throw error;
+
+    if (!data || data.length === 0) {
+      listEl.innerHTML = '<div class="comment-empty">还没有留言，快来抢沙发吧 ~</div>';
+      return;
+    }
+
+    // Build parent->children map
+    const childrenMap = {};
+    data.forEach(c => {
+      const pid = c.parent_id || '__root__';
+      if (!childrenMap[pid]) childrenMap[pid] = [];
+      childrenMap[pid].push(c);
+    });
+
+    // Recursive render with collapsible children
+    function renderTree(parentId, depth) {
+      const children = childrenMap[parentId] || [];
+      if (children.length === 0) return '';
+      return children.map(c => {
+        const indent = depth * 28;
+        let html = `
+          <div class="comment-item${depth > 0 ? ' reply' : ''}" style="margin-left:${indent}px;">
+            <div class="comment-meta">
+              ${depth > 0 ? '<span class="comment-reply-tag">↳ 回复</span>' : ''}
+              <span class="comment-nickname">${escapeHtml(c.nickname)}</span>
+              <span class="comment-time">${timeAgo(c.created_at)}</span>
+            </div>
+            <div class="comment-content">${escapeHtml(c.content)}</div>
+            <button class="btn-reply" onclick="replyTo('${c.id}', '${escapeHtml(c.nickname).replace(/'/g, "\\'")}')">回复</button>`;
+
+        // Check if this comment has children
+        const childComments = childrenMap[c.id] || [];
+        if (childComments.length > 0) {
+          // Count total descendants recursively
+          function countAll(pid) {
+            const kids = childrenMap[pid] || [];
+            return kids.length + kids.reduce((sum, k) => sum + countAll(k.id), 0);
+          }
+          const totalDescendants = countAll(c.id);
+          html += `
+            <button class="btn-toggle" id="toggle-${c.id}" onclick="toggleReplies('${c.id}')">
+              ▸ 展开 ${totalDescendants} 条回复
+            </button>
+            <div class="comment-children" id="children-${c.id}" style="display:none;">
+              ${renderTree(c.id, depth + 1)}
+            </div>`;
+        }
+        html += '</div>';
+        return html;
+      }).join('');
+    }
+
+    listEl.innerHTML = renderTree('__root__', 0) || '<div class="comment-empty">还没有留言，快来抢沙发吧 ~</div>';
+  } catch (err) {
+    console.error('加载评论失败:', err);
+    const msg = err.message || err.error_description || JSON.stringify(err);
+    listEl.innerHTML = '<div class="comment-empty">加载失败: ' + (msg.length > 60 ? msg.slice(0, 60) + '...' : msg) + '</div>';
+  }
+}
+
+// Character counter
+document.getElementById('commentContent').addEventListener('input', function() {
+  document.getElementById('charCount').textContent = this.value.length;
+});
+
+// Reply handling
+function replyTo(parentId, nickname) {
+  document.getElementById('replyTo').value = parentId;
+  document.getElementById('replyNickname').textContent = nickname;
+  document.getElementById('replyIndicator').style.display = 'block';
+  document.getElementById('commentContent').placeholder = '写下你的回复...';
+  document.getElementById('commentContent').focus();
+}
+
+function cancelReply() {
+  document.getElementById('replyTo').value = '';
+  document.getElementById('replyIndicator').style.display = 'none';
+  document.getElementById('commentContent').placeholder = '写下你想说的话...';
+}
+window.replyTo = replyTo;
+window.cancelReply = cancelReply;
+
+// Submit comment
+let submitLocked = false;
+async function submitComment() {
+  if (submitLocked) return;
+
+  const nickname = document.getElementById('nickname').value.trim();
+  const content = document.getElementById('commentContent').value.trim();
+  const parentId = document.getElementById('replyTo').value || null;
+  const errorEl = document.getElementById('commentError');
+
+  // Validation
+  if (!nickname) { showError('请输入昵称'); return; }
+  if (nickname.length > 20) { showError('昵称最多 20 个字'); return; }
+  if (!content) { showError('请输入留言内容'); return; }
+  if (content.length > 500) { showError('留言内容最多 500 字'); return; }
+
+  errorEl.style.display = 'none';
+
+  // Lock submit for 2 seconds
+  submitLocked = true;
+  const btn = document.getElementById('btnSubmit');
+  btn.disabled = true;
+  btn.textContent = '提交中...';
+
+  try {
+    const { error } = await supabase
+      .from('comments')
+      .insert([{ page_id: PAGE_ID, parent_id: parentId, nickname, content }]);
+
+    if (error) throw error;
+
+    // Clear form & cancel reply
+    document.getElementById('nickname').value = '';
+    document.getElementById('commentContent').value = '';
+    document.getElementById('charCount').textContent = '0';
+    cancelReply();
+
+    // Reload comments
+    await loadComments();
+  } catch (err) {
+    console.error('提交评论失败:', err);
+    const msg = err.message || err.error_description || JSON.stringify(err);
+    showError('提交失败: ' + (msg.length > 60 ? msg.slice(0, 60) + '...' : msg));
+  }
+
+  // Unlock after 2 seconds
+  setTimeout(() => {
+    submitLocked = false;
+    btn.disabled = false;
+    btn.textContent = '发表留言';
+  }, 2000);
+}
+
+function showError(msg) {
+  const errorEl = document.getElementById('commentError');
+  errorEl.textContent = msg;
+  errorEl.style.display = 'block';
+  setTimeout(() => { errorEl.style.display = 'none'; }, 4000);
+}
+
+// Toggle reply visibility
+function toggleReplies(commentId) {
+  const childrenEl = document.getElementById('children-' + commentId);
+  const toggleEl = document.getElementById('toggle-' + commentId);
+  if (!childrenEl || !toggleEl) return;
+  if (childrenEl.style.display === 'none') {
+    childrenEl.style.display = 'block';
+    toggleEl.innerHTML = toggleEl.innerHTML.replace('▸ 展开', '▾ 收起');
+  } else {
+    childrenEl.style.display = 'none';
+    toggleEl.innerHTML = toggleEl.innerHTML.replace('▾ 收起', '▸ 展开');
+  }
+}
+window.toggleReplies = toggleReplies;
+
+// Expose to global scope for onclick
+window.submitComment = submitComment;
+
+// Load comments on page load
+loadComments();
+
+})(); // end Supabase IIFE
+</script>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img src="" alt="" id="lightbox-img">
+  <span class="lightbox-hint">点击任意位置关闭</span>
+</div>
+
+</body>
+</html>
